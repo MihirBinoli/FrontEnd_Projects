@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>amazon.com</title>
+    <style>
+        .navbar{
+            /*border: 1px solid black;*/
+            width: 100%;
+            height: 95px;
+        }
+        .upper_nav{
+            width: 100%;
+            height: 57px;
+            background-color: #212A3E;
+        }
+        .logo{
+            height: 57px;
+            width: 120px;
+            float: left;
+        }
+        .center_uppernav{
+            float: left;
+            width: 927px;
+        }
+        .Unav_H1{
+            
+            margin-left: 35px;
+            float: left;
+            position: relative;
+            top: -12px;
+            color: white;
+        }
+        .Unav_H2{
+            position: absolute;
+            margin-left: 35px;
+            top: 13px;
+            color: white;
+        }
+        .UnavBox1{
+            float: left;
+            width: 193px;
+            height: 57px;
+        }
+        .UnavBox2{
+            
+            float: left;
+            width: 720px;
+            height: 57px;
+        }
+        
+        .searchBarL{
+            border: 1px solid black;
+            float: left;
+            height: 40px;
+            position: absolute;
+            top: 15px;
+            width: 50px;
+            background-color: white;
+        }
+        .searchBarR{
+            border: 1px solid black;
+            float: right;
+            margin-left: 50px;
+            height: 40px;
+            position: absolute;
+            top: 15px;
+            width: 671px;
+            background-color: white;
+        }
+        .searchBarE{
+            position: absolute;
+            top: -10px;
+            left: 10px;
+        }
+        .searchimg{
+            float: right;
+            width: 40px;
+        }
+        .right_uppernav{
+            width: 370px;
+            height: 57px;
+            float: left;
+        }
+        .UnavBox3{
+            
+            float: left;
+            width: 70px;
+            height: 57px;
+        }
+        .UnavBox4{
+            
+            float: left;
+            width: 140px;
+            height: 57px;
+        }
+        .upNavH{
+            position: absolute;
+            top: 0px;
+            color:white;
+            
+        }
+        .downNavH{
+            position: absolute;
+            font-display: bold;
+            top: 15px;
+            color: white;
+            
+        }
+        .flagLogo{
+            position: absolute;
+            width: 19px;
+            top: 34px;
+            left: 1066px;
+        }
+        .EN{
+            position: absolute;
+            top: 10px;
+            left: 1088px;
+            color: white;
+        }
+        .cartimg{
+            position: absolute;
+            width: 30px;
+            top: 20px;
+            left: 1355px;
+        }
+        .Cart{
+            position: absolute;
+            top: 15px;
+            left: 1390px;
+            color: white;
+        }
+        .lowernav{
+            background-color: #212A3E;
+            height: 39px;
+        }
+        section{
+            float: left;
+            color: white;
+            
+            height: 39px;
+        }
+        .lowNavH{
+            color: white;
+            margin: 12px;
+        }
+        .navImg{
+           float: right;
+           width: 390px;
+        }
+        .banner{
+            border: 2px solid black;
+            width: 100%;
+            height: 250px; 
+            overflow: hidden;
+        }
+        .bannerImg{
+            width: 100%;
+        }
+        .banner>.banners{
+            width: 9940px;
+            height: 500px;
+            position: relative;
+            animation: bann 30s infinite alternate ease-in-out 4s;
+        }
+        .banners>img{
+            width: 1420px;
+            height: 500px;
+        }
+        @keyframes bann {
+            0%{left:0px;}
+            14%{left:0px;}
+            20%{left: -1420px;}
+            28%{left: -1420px;}
+            34%{left: -2840px;}
+            42%{left: -2840px;}
+            48%{left: -4260px;}
+            56%{left: -4260px;}
+            62%{left: -5680px;}
+            70%{left: -5680px;}
+            76%{left: -7100px;}
+            84%{left: -7100px;}
+            90%{left: -8520px;}
+            100%{left: -8520px;}
+        }
+
+        .firstBlock{
+            
+            height: 880px;
+            
+        }
+        .box{
+            /*border:1px solid black;*/
+            background-color: rgb(241, 248, 248);
+            float: left;
+            height: 420px;
+            width: 22.4%;
+            margin-left: 2%;
+            margin-top: 1%;
+        }
+        .boxIn{
+            margin: 20px;
+        }
+        .boxH{
+            /*border: 1px solid black;*/
+            
+            height: 53px;
+            margin: 20px;
+        }
+        .pharmboxH{
+            color: black;
+            margin-top: 0px;
+        }
+        .boxIm{
+            /*border: 1px solid black;*/
+            position: absolute;
+            margin-top: -11px;
+            margin-left: 20px;
+            width: 19.2%;
+        }
+        .boxLink{
+            margin: 20px;
+            position: absolute;
+            top: 740px;
+        }
+        .boxLink1{
+            margin: 20px;
+            position: absolute;
+            top: 1170px;
+        }
+        a{
+            text-decoration: none;
+        }
+        .boxIm2{
+            /*border: 1px solid black;*/
+            float: left;
+            width: 40%;
+            margin-left: 18px;
+            height: 130px;
+        }
+        .boxEx{
+            margin: 0;
+            width: 22%;
+        }
+        h6,h5,h2,h4{
+            color: black;
+        }
+        .box2H1{
+            position: absolute;
+            top: 86px;
+            color: black;
+        }
+        .box2H12{
+            position: absolute;
+            top: 220px;
+            color: black;
+        }
+        .box2H{
+            position: absolute;
+            top: 990px;
+            color: black;
+        }
+        .box2H2{
+            position: absolute;
+            top: 1122px;
+            color: black;
+        }
+        .box4up{
+            margin: 20px;
+        }
+        .box4down{
+            border: 1px solid black;
+            margin: 20px;
+            height: 30px;
+            background-color: hwb(42 39% 6%);
+        }
+        .signin{
+            position: absolute;
+            top: 456px;
+            left: 1190px;
+        }
+        .sceondBlock{
+            border: 1px solid black;
+            height: 600px;
+        }
+        .secBHead{
+            /*border: 1px solid black;*/
+            height: 60px;
+        }
+        .boxIm3{
+            height: 200px;
+            
+        }
+        .off{
+            background-color: #f83131;
+            height: 24px;
+            width: 80px;
+            margin-left: 20px;
+            margin-top: 5px;
+        }
+        .offP{
+            color: white;
+            position: absolute;
+            left: 13px;
+            top: 1507px;
+        }
+        .dealOD{
+            color: rgb(201, 21, 21);
+            position: absolute;
+            top: 1507px;
+            left: 116px;
+            
+        }
+        .dealImg{
+            margin-left: 20px;
+            width: 200px;
+            height: 200px;
+        }
+        .secBLink{
+            position: absolute;
+            top: 1264px;
+            left: 150px;
+        }
+        .slider{
+            height: 300px;
+            width: 5000px;
+            /*border: 1px solid red;*/
+            
+        }
+        .sceondBlock>.slider{
+            
+            width: 6000px;
+            position: relative;
+            animation: dealss 20s static ;
+        }
+        .slider>.deals{
+            width: 242px;
+            height: 300px;
+            /*border: 1px solid black;*/
+        }
+         .secL{
+            height: 1000px;
+         }
+
+        .footer{
+            
+            height: 755px;
+            width: 100%;
+            background-color: darkslategray;
+        }
+        .reload{
+            margin-top: 0px;
+            height: 48px;
+            background-color: darkcyan;
+            
+        }
+        .reloadB{
+            /*text-align: center;*/       /* div is shifting down*/
+            position: absolute;
+            left: 680px;
+            top: 2614px;
+            color: black;
+        }
+        .reloadBU{
+            color: white;
+        }
+        .contacts{
+            height: 326px;
+            background-color: rgb(22, 40, 40);
+        }
+        .contac{
+            
+            width: 400px;
+        }
+        .knowUs{
+            position: absolute;
+            left: 250px;
+        }
+        .boxxx{
+            width: 454px;
+        }
+        .boxx{
+            width: 240px;
+        }
+        .boxx2{
+            width: 300px;
+        }
+        .countries{
+            height: 155px;
+            background-color: rgb(27, 42, 42);
+        }
+        .last{
+            height: 226px;
+            background-color: rgb(14, 16, 16);
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="upper_nav">
+            <div class="logo">
+                <img src="Amazon_logo.png" alt="" class="logo">
+            </div>
+            <div class="center_uppernav">
+                <div  class="UnavBox1">
+                    <h5 class="Unav_H1">Hello</h5>
+                    <h4 class="Unav_H2">Select your address</h4>
+                </div>
+                <div class="UnavBox2">
+                    <div class="searchBarL"><h5 class="searchBarE">All</h5></div>
+                    <div class="searchBarR">
+                        <h4 class="searchBarE">Search Amazon.in</h4>
+                        <img src="searchicon.png" class="searchimg">
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="right_uppernav">
+                <div class="UnavBox3">
+                    <img src="flag.png" class="flagLogo">
+                    <h4 class="EN">EN</h4>
+                </div>
+                <div class="UnavBox4">
+                    <h5 class="upNavH"><a href="https://www.amazon.in/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fgp%2Fcart%2Fview.html%3Fref_%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=inflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&" class="reloadBU">Hello, sign in</a></h5>
+                    <h4 class="downNavH">Accounts & Lists</h4>
+                </div>
+                <div class="UnavBox3">
+                    
+                    <h5 class="upNavH"><a href="https://www.amazon.in/ap/signin?_encoding=UTF8&accountStatusPolicy=P1&openid.assoc_handle=inamazon&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fgp%2Fcss%2Forder-history%3Fie%3DUTF8%26ref_%3Dnav_orders_first&pageId=webcs-yourorder&showRmrMe=1" class="reloadBU">Returns</a></h5>
+                    <h4 class="downNavH">& Orders</h4>
+                </div>
+                <div class="UnavBox3">
+                    <img src="cart.png" class="cartimg">
+                    <h4 class="Cart"><a href="https://www.amazon.in/gp/cart/view.html?ref_=nav_cart" class="reloadBU">Cart</a></h4>
+                </div>
+            </div>
+        </div>
+        <div class="lowernav">
+            <div>
+            <section>
+                <h5 class="lowNavH"><a href=""class="reloadBU">--------All</a></h4>
+            </section>
+            <section>
+                <h5 class="lowNavH"><a href="https://www.amazon.in/minitv?ref_=nav_avod_desktop_topnav"class="reloadBU">Amazon miniTV</a></h4>
+            </section>
+            <section>
+                <h5 class="lowNavH"><a href="https://www.amazon.in/b/32702023031?node=32702023031&ld=AZINSOANavDesktop_T3&ref_=nav_cs_sell_T3"class="reloadBU">Sell</a></h5>
+            </section>
+            <section>
+                <h5 class="lowNavH"><a href="https://www.amazon.in/gp/bestsellers/?ref_=nav_cs_bestsellers"class="reloadBU">Best Sellers</a></h5>
+            </section>
+            <section>
+                <h5 class="lowNavH"><a href="https://www.amazon.in/mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_mobiles"class="reloadBU">Mobiles</a></h5>
+            </section>
+            <section>
+                <h5 class="lowNavH"><a href="https://www.amazon.in/deals?ref_=nav_cs_gb"class="reloadBU">Today's Deals</a></h5>
+            </section>
+            <section>
+                <h5 class="lowNavH"><a href="https://www.amazon.in/gp/help/customer/display.html?nodeId=200507590&ref_=nav_cs_help"class="reloadBU">Customer Service</a></h5>
+            </section>
+            <section>
+                <h5 class="lowNavH"><a href="https://www.amazon.in/gp/new-releases/?ref_=nav_cs_newreleases"class="reloadBU">New Release</a></h5>
+            </section>
+            <section>
+                <h5 class="lowNavH"><a href="https://www.amazon.in/electronics/b/?ie=UTF8&node=976419031&ref_=nav_cs_electronics"class="reloadBU">Electronics</a></h5>
+            </section>
+            <section>
+                <h5 class="lowNavH"><a href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember"class="reloadBU">Prime ---</a></h5>
+            </section>
+            <section>
+                <h5 class="lowNavH"><a href="https://www.amazon.in/Home-Kitchen/b/?ie=UTF8&node=976442031&ref_=nav_cs_home"class="reloadBU">Home & Kitchen</a></h5>
+            </section>
+            </div>
+            <div >
+                <a href="https://www.amazon.in/b/?_encoding=UTF8&node=6967393031&ref_=nav_swm_IN_swm_appdownload&pf_rd_p=eeeac855-dfba-474a-aa54-dfd5521b9098&pf_rd_s=nav-sitewide-msg&pf_rd_t=4201&pf_rd_i=navbar-4201&pf_rd_m=A21TJRUUN4KGV&pf_rd_r=TK7AK5FKBW5G3ARZ7EP0"><img src="appImg.jpeg" alt="" class="navImg"></a>
+            </div>
+        </div>
+    </div>
+        
+    <div class="banner">
+        <section class="banners">
+        <img src="banner1.jpeg" class="bannerImg">
+        <img src="banner2.jpeg" class="bannerImg">
+        <img src="banner3.jpeg" class="bannerImg">           
+        <img src="banner4.jpeg" class="bannerImg">
+        <img src="banner5.jpeg" class="bannerImg">
+        <img src="banner6.jpeg" class="bannerImg">
+        <img src="banner7.jpeg" class="bannerImg">
+    </section>
+    </div>
+    <div class="firstBlock">
+        <section class="box">
+            <div class="boxH">
+                <h2 class="pharmboxH">Up to 50% | Track blood sugar at home</h3>
+            </div>
+            <div class="boxIm">
+                <img src="pharm.jpeg" alt="" width="100%" height="276px">
+            </div>
+            <div class="boxLink">
+                <a href="">Visit the store</a>
+            </div>
+        </section>
+        <section class="box">
+            <div class="boxH">
+                <h2 class="pharmboxH">Appliances for your home | Up to 55% off</h3>
+            </div>
+            <div class="boxIm boxEx">
+                <section class="boxIm2">
+                    <img src="refr.jpeg" alt="" width="100%" height="100px">
+                    <h5 class="box2H1">Air Conditioner</h5>
+                </section>
+                <section class="boxIm2">
+                    <img src="ref.jpeg" alt="" width="100%" height="100px">
+                    <h5 class="box2H1">Refrigerators</h5>
+                </section>
+                <section class="boxIm2">
+                    <img src="microw.jpeg" alt="" width="100%" height="100px">
+                    <h5 class="box2H12">Microwaves</h5>
+                </section>
+                <section class="boxIm2">
+                    <img src="washM.jpeg" alt="" width="100%" height="100px">
+                    <h5 class="box2H12">Washing Machine</h5>
+                </section>
+            </div>
+            <div class="boxLink">
+                <a href="">See more</a>
+            </div>
+        </section>
+        <section class="box">
+            <div class="boxH">
+                <h2 class="pharmboxH">Up to 70% | Clearance store</h3>
+            </div>
+            <div class="boxIm">
+                <img src="desktop.jpeg" alt="" width="100%" height="275px">
+            </div>
+            <div class="boxLink">
+                <a href="">See more</a>
+            </div>
+        </section>
+        <section class="box">
+            <div class="box4up">
+                <h2>Sign in for your best experience</h2>
+                <div class="box4down"><h4 class="signin"><a href="https://www.amazon.in/ap/signin?openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fref%3Dgw_sgn_ib%3F_encoding%3DUTF8%26pf_rd_p%3Db1dbcf0f-387c-42b7-a092-9d42f9c202b5%26pd_rd_wg%3DjYjzD%26pf_rd_r%3D8VRBVT9T1PF6K837PM94%26content-id%3Damzn1.sym.b1dbcf0f-387c-42b7-a092-9d42f9c202b5%26pd_rd_w%3DmrRHV%26painterId%3Dsign-in-v2%26pd_rd_r%3D72736fd6-3325-4332-b44b-65a838ae0b29&openid.assoc_handle=inflex&openid.pape.max_auth_age=0&pf_rd_r=8VRBVT9T1PF6K837PM94&pf_rd_p=b1dbcf0f-387c-42b7-a092-9d42f9c202b5&pd_rd_r=72736fd6-3325-4332-b44b-65a838ae0b29&pd_rd_w=mrRHV&pd_rd_wg=jYjzD&ref_=pd_gw_unk" >Sign in securely</a></h4></div>
+            </div>
+            <div>
+
+            </div>
+        </section>
+        <section class="box">
+            <div class="boxH">
+                <h2 class="pharmboxH">50% - 80% off | Wardrobe Refresh Sale</h3>
+            </div>
+            <section class="boxIm2">
+                <img src="clothing.png" alt="" width="100%" height="100px">
+                <h5 class="box2H">Clothing</h5>
+            </section>
+            <section class="boxIm2">
+                <img src="footwear.png" alt="" width="100%" height="100px">
+                <h5 class="box2H">Footwear</h5>
+            </section>
+            <section class="boxIm2">
+                <img src="watches.png" alt="" width="100%" height="100px">
+                <h5 class="box2H2">Watches</h5>
+            </section>
+            <section class="boxIm2">
+                <img src="bags.png" alt="" width="100%" height="100px">
+                <h5 class="box2H2">Bags & luggage</h5>
+            </section>
+            <div class="boxLink1">
+                <a href="">See all offers</a>
+            </div>
+        </section>
+        <section class="box"><div class="boxH">
+            <h2 class="pharmboxH">Automotive essentials | Up to 60% off</h3>
+            </div>
+            <section class="boxIm2">
+                <img src="clean.jpeg" alt="" width="100%" height="100px">
+                <h5 class="box2H">Cleaning accessories</h5>
+            </section>
+            <section class="boxIm2">
+                <img src="tyre.jpeg" alt="" width="100%" height="100px">
+                <h5 class="box2H">Tyre & rim care</h5>
+            </section>
+            <section class="boxIm2">
+                <img src="helmet.jpeg" alt="" width="100%" height="100px">
+                <h5 class="box2H2">Helmets</h5>
+            </section>
+            <section class="boxIm2">
+                <img src="vaccum.jpeg" alt="" width="100%" height="100px">
+                <h5 class="box2H2">Vaccum cleaner</h5>
+            </section>
+            <div class="boxLink1">
+                <a href="">See more</a>
+            </div>
+        </section>
+        <section class="box"><div class="boxH">
+            <h3 class="pharmboxH">Super value days | Up to 35% off | Summer essentials</h3>
+            </div>
+            <section class="boxIm2">
+                <img src="drink.jpeg" alt="" width="100%" height="100px">
+                <h5 class="box2H">Health drinks</h5>
+            </section>
+            <section class="boxIm2">
+                <img src="juice.jpeg" alt="" width="100%" height="100px">
+                <h5 class="box2H">Juices & drink mixes</h5>
+            </section>
+            <section class="boxIm2">
+                <img src="skin.jpeg" alt="" width="100%" height="100px">
+                <h5 class="box2H2">Skin & health care</h5>
+            </section>
+            <section class="boxIm2">
+                <img src="baby.jpeg" alt="" width="100%" height="100px">
+                <h5 class="box2H2">Baby care</h5>
+            </section>
+            <div class="boxLink1">
+                <a href="">See all offers</a>
+            </div>
+        </section>
+        <section class="box"><div class="boxH">
+            <h3 class="pharmboxH">Up to 60% off | Professional tools, testing & more</h3>
+            </div>
+            <section class="boxIm2">
+                <img src="profTools.jpeg" alt="" width="100%" height="100px">
+                <h5 class="box2H">Professional tools</h5>
+            </section>
+            <section class="boxIm2">
+                <img src="measure.jpeg" alt="" width="100%" height="100px">
+                <h5 class="box2H">Measuring instruments</h5>
+            </section>
+            <section class="boxIm2">
+                <img src="clean.jpeg" alt="" width="100%" height="100px">
+                <h5 class="box2H2">Cleaning supplies</h5>
+            </section>
+            <section class="boxIm2">
+                <img src="medS.jpeg" alt="" width="100%" height="100px">
+                <h5 class="box2H2">Medical supplies</h5>
+            </section>
+            <div class="boxLink1">
+                <a href="">See all offers</a>
+            </div>
+        </section>
+    </div>
+    <div class="secondBlock">
+        <div class="secBHead">
+            <h3 >Today's Deals</h3>
+            <h4><a href="" class="secBLink">See all deals</a></h4>
+        </div>
+        <div class="slider">
+        <section class="deals">
+            <div class="boxIm3">
+                <img src="deal1.jpeg" class="dealImg">
+            </div>
+            <div>
+                <div class="deal">
+                    <div class="off">
+                        <h5 class="offP">
+                            15% off
+                        </h5>
+                    </div><h5 class="dealOD">Deal of the Day</h5></div>
+                <div class="about"></div>
+            </div>
+        </section>
+        <section class="deals">
+            <div class="boxIm3">
+                <img src="deal2.jpeg" class="dealImg">
+            </div>
+            <div>
+                <div class="deal">
+                    <div class="off">
+                        <h5 class="offP">Up to 84% off</h5>
+                    </div><h5 class="dealOD">Deal of the Day</h5></div>
+                <div class="about"></div>
+            </div>
+        </section>
+        <section class="deals">
+            <div class="boxIm3">
+                <img src="deal3.jpeg" class="dealImg">
+            </div>
+            <div>
+                <div class="deal">
+                    <div class="off">
+                        <h5 class="offP"></h5>
+                    </div><h5 class="dealOD">Deal of the Day</h5></div>
+                <div class="about"></div>
+            </div>
+        </section>
+        <section class="deals">
+            <div class="boxIm3">
+                <img src="deal4.jpeg" class="dealImg">
+            </div>
+            <div>
+                <div class="deal">
+                    <div class="off">
+                        <h5 class="offP"></h5>
+                    </div><h5 class="dealOD">Deal of the Day</h5></div>
+                <div class="about"></div>
+            </div>
+        </section>
+        <section class="deals">
+            <div class="boxIm3">
+                <img src="deal5.jpeg" class="dealImg">
+            </div>
+            <div>
+                <div class="deal">
+                    <div class="off">
+                        <h5 class="offP"></h5>
+                    </div><h5 class="dealOD">Deal of the Day</h5></div>
+                <div class="about"></div>
+            </div>
+        </section>
+        <section class="deals">
+            <div class="boxIm3">
+                <img src="deal6.jpeg" class="dealImg">
+            </div>
+            <div>
+                <div class="deal">
+                    <div class="off">
+                        <h5 class="offP"></h5>
+                    </div><h5 class="dealOD">Deal of the Day</h5></div>
+                <div class="about"></div>
+            </div>
+        </section>
+        <section class="deals">
+            <div class="boxIm3">
+                <img src="deal7.jpeg" class="dealImg">
+            </div>
+            <div>
+                <div class="deal">
+                    <div class="off">
+                        <h5 class="offP"></h5>
+                    </div><h5 class="dealOD">Deal of the Day</h5></div>
+                <div class="about"></div>
+            </div>
+        </section>
+        <section class="deals">
+            <div class="boxIm3">
+                <img src="deal8.jpeg" class="dealImg">
+            </div>
+            <div>
+                <div class="deal">
+                    <div class="off">
+                        <h5 class="offP"></h5>
+                    </div><h5 class="dealOD">Deal of the Day</h5></div>
+                <div class="about"></div>
+            </div>
+        </section>
+        <section class="deals">
+            <div class="boxIm3">
+                <img src="deal9.jpeg" class="dealImg">
+            </div>
+            <div>
+                <div class="deal">
+                    <div class="off">
+                        <h5 class="offP"></h5>
+                    </div><h5 class="dealOD">Deal of the Day</h5></div>
+                <div class="about"></div>
+            </div>
+        </section>
+        <section class="deals">
+            <div class="boxIm3">
+                <img src="deal10.jpeg" class="dealImg">
+            </div>
+            <div>
+                <div class="deal">
+                    <div class="off">
+                        <h5 class="offP"></h5>
+                    </div><h5 class="dealOD">Deal of the Day</h5></div>
+                <div class="about"></div>
+            </div>
+        </section>
+        <section class="deals">
+            <div class="boxIm3">
+                <img src="deal11.jpeg" class="dealImg">
+            </div>
+            <div>
+                <div class="deal">
+                    <div class="off">
+                        <h5 class="offP"></h5>
+                    </div><h5 class="dealOD">Deal of the Day</h5></div>
+                <div class="about"></div>
+            </div>
+        </section>
+        <section class="deals">
+            <div class="boxIm3">
+                <img src="deal12.jpeg" class="dealImg">
+            </div>
+            <div>
+                <div class="deal">
+                    <div class="off">
+                        <h5 class="offP"></h5>
+                    </div><h5 class="dealOD">Deal of the Day</h5></div>
+                <div class="about"></div>
+            </div>
+        </section>
+    </div>
+    </div>
+
+    <div class="secL">
+
+    </div>
+
+
+
+    <div class="footer">
+        <div class="reload">
+            <h4 class="reloadB"><a href="http://127.0.0.1:5500/amazon/amazon.html" class="reloadBU">Back to top</a></h4>
+        </div>
+        <div class="contacts">
+            <section class="contac boxxx">
+                <div class="knowUs">
+                <h3>Get to Know Us</h3>
+                <h5><a href="https://www.aboutamazon.in/?utm_source=gateway&utm_medium=footer" class="reloadBU">About Us</a></h5>
+                <h5><a href="https://amazon.jobs/en/" class="reloadBU">Careers</a></h5>
+                <h5><a href="https://press.aboutamazon.in/?utm_source=gateway&utm_medium=footer" class="reloadBU">Press Releases</a></h5>
+                <h5><a href="https://www.amazon.science" class="reloadBU">Amazon Science</a></h5>
+                </div>
+            </section>
+            <section class="contac boxx">
+                <h3>Contact with Us</h3>
+                <h5><a href="https://www.facebook.com/AmazonIN" class="reloadBU">Facebook</a></h5>
+                <h5><a href="https://twitter.com/AmazonIN" class="reloadBU">Twitter</a></h5>
+                <h5><a href="https://www.instagram.com/amazondotin/" class="reloadBU">Instagram</a></h5>
+            </section>
+            <section class="contac boxx2">
+                <h3>Make Money with Us</h3>
+                <h5><a href="https://www.amazon.in/b/?node=2838698031&ld=AZINSOANavDesktopFooter_C&ref_=nav_footer_sell_C" class="reloadBU">Sell on Amazon</a></h5>
+                <h5><a href="https://www.amazon.in/b/?node=16192220031&ref_=map_1_b2b_GW_FT" class="reloadBU">Sell under Amazon Accelerator</a></h5>
+                <h5><a href="https://brandservices.amazon.in/?ref=AOINABRLGNRFOOT&ld=AOINABRLGNRFOOT" class="reloadBU">Protect and Build Your Brand</a></h5>
+                <h5><a href="https://sell.amazon.in/grow-your-business/amazon-global-selling?ld=AZIN_Footer_V1&ref=AZIN_Footer_V1" class="reloadBU">Amazon Global Selling</a></h5>
+                <h5><a href="https://affiliate-program.amazon.in/?utm_campaign=assocshowcase&utm_medium=footer&utm_source=GW&ref_=footer_assoc" class="reloadBU">Become an Affiliate</a></h5>
+                <h5><a href="https://sell.amazon.in/sell-online/fulfillment-by-amazon?ref_=asin_soa_rd&ld=AWRGINFBAfooter" class="reloadBU">Fulfilment by Amazon</a></h5>
+                <h5><a href="https://advertising.amazon.com/en-gb?ref=Amz.in" class="reloadBU">Advertise Your Products</a></h5>
+            </section>
+            <section class="contac">
+                <h3>Let Us Help You</h3>
+                <h5><a href="https://www.amazon.in/gp/help/customer/display.html?nodeId=GDFU3JS5AL6SYHRD&ref_=footer_covid" class="reloadBU">COVID-19 and Amazon</a></h5>
+                <h5><a href="https://www.amazon.in/gp/css/homepage.html?ref_=footer_ya" class="reloadBU">Your Account</a></h5>
+                <h5><a href="https://www.amazon.in/gp/css/homepage.html?ref_=footer_ya" class="reloadBU">Returns Centre</a></h5>
+                <h5><a href="https://www.amazon.in/gp/help/customer/display.html?nodeId=201083470&ref_=footer_swc" class="reloadBU">100% Purchase Protection</a></h5>
+                <h5><a href="https://www.amazon.in/gp/browse.html?node=6967393031&ref_=footer_mobapp" class="reloadBU">Amazon App Download</a></h5>
+                <h5><a href="https://www.amazon.in/gp/help/customer/display.html?nodeId=200507590&ref_=footer_gw_m_b_he" class="reloadBU">Help</a></h5>
+            </section>
+        </div>
+        <div class="countries">
+
+        </div>
+        <div class="last"></div>
+    </div>
+</body>
+</html>
